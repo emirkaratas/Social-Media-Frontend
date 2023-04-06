@@ -61,5 +61,17 @@
             }
         }
     }
+
+    @media (min-width: 1025px) {
+        .container {
+            .card {
+                height: 55%!important;
+                width: 60%;
+            }
+            .custom-form{
+                width: 90%!important;
+            }
+        }
+    }
 }
 
