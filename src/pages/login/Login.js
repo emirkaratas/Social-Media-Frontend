@@ -1,7 +1,7 @@
 import React from 'react'
 import { useFormik } from 'formik'
 import "./login.scss"
-import { Alert, Form, Button, Spinner } from 'react-bootstrap'
+import { Form, Button, Spinner } from 'react-bootstrap'
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import validations from './validations'
 
@@ -15,8 +15,7 @@ function Login() {
     validationSchema: validations,
     onSubmit: (values, bag) => {
       try {
-        throw "Bu Maile Ait Kullanıcı Bulunmuyor"
-        // console.log(values)
+        console.log(values)
       }
       catch (error) {
         bag.setErrors({ general: error })
@@ -47,10 +46,11 @@ function Login() {
                     <FloatingLabel
                       controlId="email"
                       label="Email Adresinizi Giriniz"
-                      className="mb-3 text-dark"
+                      className="mb-3 text-dark form-floating"
                     >
                       <Form.Control
                         name='email'
+                        className='form-control'
                         type="email"
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}

@@ -1,36 +1,36 @@
 .login {
     height: 100vh;
     background: linear-gradient(45deg, #c94b4b, #4b134f);
-}
 
-.card {
-    background-color: black;
-    opacity: .4;
-    &--desc{
-        opacity: 1;
+    .card {
+        background-color: black;
+        opacity: .4;
+        &--desc{
+            opacity: 1;
+        }
+        width: 50%;
     }
-    width: 50%;
-}
 
-@media (max-width: 768px) {
-    .container {
-        .card {
-            width: 80%;
-        }
-        .custom-form{
-            width: 100%!important;
+    @media (max-width: 768px) {
+        .container {
+            .card {
+                width: 80%;
+            }
+            .custom-form{
+                width: 100%!important;
+            }
         }
     }
-}
-
-@media (max-width: 1024px) {
-    .container {
-        .card {
-            height: 50%!important;
-            width: 75%;
-        }
-        .custom-form{
-            width: 90%!important;
+    
+    @media (max-width: 1024px) {
+        .container {
+            .card {
+                height: 50%!important;
+                width: 75%;
+            }
+            .custom-form{
+                width: 90%!important;
+            }
         }
     }
 }
