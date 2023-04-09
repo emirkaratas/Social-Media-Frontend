@@ -4,6 +4,7 @@ import "./login.scss"
 import { Form, Button, Spinner } from 'react-bootstrap'
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import validations from './validations'
+import { Link } from 'react-router-dom';
 
 function Login() {
   const formik = useFormik({
@@ -77,6 +78,9 @@ function Login() {
                       {formik.errors.password && formik.touched.password && <div className='text-danger text-start'>{formik.errors.password}</div>}
                     </FloatingLabel>
                   </Form.Group>
+                  <div className='text-start mb-2'>
+                    <Link to="/register" className='btn btn-sm btn-dark'>Hesabınız Yok Mu?</Link>
+                  </div>
                   <Form.Group className="mb-3 text-start">
                     <Form.Check type="checkbox" label="Beni Hatırla" name='checkRemember' id="checkRemember" onChange={formik.handleChange} />
                   </Form.Group>

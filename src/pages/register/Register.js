@@ -4,7 +4,8 @@ import "./register.scss"
 import { Form, Button, Spinner } from 'react-bootstrap'
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import validations from './validations'
-import {AiFillHome} from "react-icons/ai"
+import { AiFillHome } from "react-icons/ai"
+import { Link } from 'react-router-dom';
 
 function Register() {
     const formik = useFormik({
@@ -31,10 +32,10 @@ function Register() {
         <div className='register'>
             <div className="container h-100">
                 <div className="h-100 row justify-content-center align-items-center">
-                    
+
                     <div className="card text-light">
                         <div className="card-header text-center">
-                            <span>Kayıt Ol</span>            
+                            <span>Kayıt Ol</span>
                         </div>
                         <hr />
                         <div className="card-body text-center">
@@ -148,6 +149,9 @@ function Register() {
                                                     {formik.errors.passwordConfirm && formik.touched.passwordConfirm && <div className='text-danger text-start'>{formik.errors.passwordConfirm}</div>}
                                                 </FloatingLabel>
                                             </Form.Group>
+                                        </div>
+                                        <div className='text-start mb-2'>
+                                            <Link to="/login" className='btn btn-sm btn-dark'>Hesabınız Var Mı?</Link>
                                         </div>
                                         <Form.Group className="mb-3 text-start">
                                             <Form.Check type="checkbox" label="Beni Hatırla" name='checkRemember' id="checkRemember" onChange={formik.handleChange} />
