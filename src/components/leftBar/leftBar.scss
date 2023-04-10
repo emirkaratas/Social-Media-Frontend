@@ -1,16 +1,27 @@
 @import "../../style.scss";
 
-.navbar {
-    @include themify($themes){
+.leftBar {
+    @include themify($themes) {
         position: sticky;
-        top: 0;
-        z-index: 1;
+        max-width: 100%;
+        height: calc(100vh - 4rem);
+        top: 4rem;
         background-color: themed("bgSoft");
         color: themed("textColor");
-        border-color: themed("border")!important;
+        border-color: themed("border") !important;
+
         .btn {
             border-color: themed("border");
             color: themed("textColor");
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: 0px!important;
+        }
+
+        @include mobile {
+            display: none;
         }
 
         .btn:hover {

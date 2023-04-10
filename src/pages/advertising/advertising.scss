@@ -1,0 +1,45 @@
+.advertising {
+    height: 100vh;
+    background: linear-gradient(45deg, #12c2e9, #c471ed);
+
+    .card {
+        background-color: black;
+        opacity: .4;
+        &--desc{
+            opacity: 1;
+        }
+        height: 60%!important;
+        width: 60%;
+    }
+
+    .link-ad {
+        position: absolute;
+        bottom: 0;
+    }
+
+    @media (max-width: 375px) {
+        .container {
+            .card {
+                width: 100%!important;
+                min-height: 100%!important;
+            }
+        }    
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            .card {
+                width: 80%;
+            }
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .container {
+            .card {
+                height: 50%!important;
+                width: 75%;
+            }
+        }
+    }
+}

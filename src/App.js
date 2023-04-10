@@ -1,7 +1,8 @@
-import { Outlet, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Error404 from "./pages/error404/Error404";
+import Advertising from "./pages/advertising/Advertising";
 import HomePage from "./pages/home/HomePage";
 import Profile from "./pages/profile/Profile";
 import Navbar from "./components/navbar/Navbar"
@@ -10,6 +11,7 @@ import RightBar from "./components/rightBar/RightBar"
 import ProtectedRoute from "./pages/protectedRoute/ProtectedRoute";
 import "./style.scss"
 import { useDarkModeContext } from "./contexts/DarkModeContext";
+import Info from "./pages/info/Info";
 
 function App() {
   const { darkMode } = useDarkModeContext()
@@ -17,9 +19,13 @@ function App() {
   const Layout = ({ children }) => {
     return <div className={`theme-${darkMode ? "dark" : "light"}`}>
       <Navbar />
-      <LeftBar />
-      {children}
-      <RightBar />
+      <div className="row align-items-start m-0">
+        <LeftBar />
+        <div className="col-6 p-0">
+          {children}
+        </div>
+        <RightBar />
+      </div>
     </div>
 
   }
@@ -32,8 +38,13 @@ function App() {
         <Route path="/register" element={<ProtectedRoute active={true} />}>
           <Route path="/register" element={<Register />} />
         </Route>
+        <Route path="/advertising" element={<Advertising />} />
         <Route path="*" element={<Error404 />} />
-        <Route path="/" element={<Layout children={<HomePage />} />} />
+        <Route path="/who-are-we" element={<Info />} />
+        <Route path="/" element={<ProtectedRoute />}>
+          <Route exact path="/" element={<Layout children={<HomePage />} />} />
+        </Route>
+        {/* <Route path="/" element={<Layout children={<HomePage />} />} /> */}
         <Route path="/profile/:id" element={<ProtectedRoute />}>
           <Route exact path="/profile/:id" element={<Layout children={<Profile />} />} />
         </Route>
