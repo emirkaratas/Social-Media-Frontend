@@ -33,8 +33,8 @@ function LeftBar() {
           <Link to="/advertising" className='text-decoration-none col-12 col-lg-6 col-xl-4'>
             <li className='me-5'>Reklamlar</li>
           </Link>
-          <Link to="/advertising" className='text-decoration-none col-12  col-lg-6 col-xl-4'>
-            <li className='me-5'>Reklamlar</li>
+          <Link to="/who-are-we" className='text-decoration-none col-12  col-lg-6 col-xl-4'>
+            <li className='me-4'>Biz Kimiz?</li>
           </Link>
           <Link className='disabled text-decoration-none col-12 col-lg-6 col-xl-4'>
             <li>Bruh ({new Date().getFullYear()})</li>
