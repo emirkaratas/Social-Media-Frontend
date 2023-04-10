@@ -8,24 +8,28 @@ import Navbar from "./components/navbar/Navbar"
 import LeftBar from "./components/leftBar/LeftBar"
 import RightBar from "./components/rightBar/RightBar"
 import ProtectedRoute from "./pages/protectedRoute/ProtectedRoute";
+import "./style.scss"
+import { useDarkModeContext } from "./contexts/DarkModeContext";
 
 function App() {
+  const { darkMode } = useDarkModeContext()
+
   const Layout = ({ children }) => {
-    return <>
+    return <div className={`theme-${darkMode ? "dark" : "light"}`}>
       <Navbar />
       <LeftBar />
       {children}
       <RightBar />
-    </>
+    </div>
 
   }
   return (
     <div className="App">
       <Routes>
-        <Route path="/login" element={<ProtectedRoute active={true}/>}>
+        <Route path="/login" element={<ProtectedRoute active={true} />}>
           <Route exact path="/login" element={<Login />} />
         </Route>
-        <Route path="/register" element={<ProtectedRoute active={true}/>}>
+        <Route path="/register" element={<ProtectedRoute active={true} />}>
           <Route path="/register" element={<Register />} />
         </Route>
         <Route path="*" element={<Error404 />} />
