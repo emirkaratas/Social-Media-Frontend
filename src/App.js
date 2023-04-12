@@ -20,11 +20,11 @@ function App() {
     return <div className={`theme-${darkMode ? "dark" : "light"}`}>
       <Navbar />
       <div className="row align-items-start m-0">
-        <LeftBar />
-        <div className="col-6 p-0">
+        <LeftBar className="col-3"/>
+        <div className="col-12 col-md-6 p-0">
           {children}
         </div>
-        <RightBar />
+        <RightBar className="col-3" />
       </div>
     </div>
 

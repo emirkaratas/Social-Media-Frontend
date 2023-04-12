@@ -20,9 +20,7 @@
             bottom: 0px!important;
         }
 
-        @include mobile {
-            display: none;
-        }
+
 
         .btn:hover {
             background-color: gray;

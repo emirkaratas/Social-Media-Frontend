@@ -1,0 +1,42 @@
+.info-page {
+    height: 100vh;
+    background: linear-gradient(90deg, #3498db, #2c3e50);
+
+    .card {
+        background-color: black;
+        opacity: .4;
+        height: 70%!important;
+        width: 60%;
+    }
+
+    .link-ad {
+        position: absolute;
+        bottom: 0;
+    }
+
+    @media (max-width: 375px) {
+        .container {
+            .card {
+                width: 100%!important;
+                min-height: 100%!important;
+            }
+        }    
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            .card {
+                width: 80%;
+            }
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .container {
+            .card {
+                height: 50%!important;
+                width: 75%;
+            }
+        }
+    }
+}

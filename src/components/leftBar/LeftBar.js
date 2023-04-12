@@ -6,7 +6,7 @@ import "./leftBar.scss"
 
 function LeftBar() {
   return (
-    <div className='leftBar p-3 col-3'>
+    <div className='leftBar p-3 col-3 d-none d-md-block'>
       <div className="user">
         <Link to="/profile/sdasd" className='text-decoration-none'>
           <button className='btn'>
@@ -39,7 +39,6 @@ function LeftBar() {
           <Link className='disabled text-decoration-none col-12 col-lg-6 col-xl-4'>
             <li>Bruh ({new Date().getFullYear()})</li>
           </Link>
-
         </ul>
       </div>
 
