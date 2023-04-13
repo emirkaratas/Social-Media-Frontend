@@ -21,7 +21,7 @@ function App() {
       <Navbar />
       <div className="row align-items-start m-0">
         <LeftBar className="col-3"/>
-        <div className="col-12 col-md-6 p-0">
+        <div className="col-12 col-md-6 p-0 app-bg">
           {children}
         </div>
         <RightBar className="col-3" />

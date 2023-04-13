@@ -1,12 +1,9 @@
 @import "../../style.scss";
 
-.leftBar {
+.home-page {
     @include themify($themes) {
-        position: sticky;
-        max-width: 100%;
-        height: calc(100vh - 4rem);
-        top: 4rem;
-        background-color: themed("bgSoft");
+        min-height: calc(100vh + 400px);
+        background-color: themed("bg");
         color: themed("textColor");
         border-color: themed("border") !important;
 
@@ -14,13 +11,6 @@
             border-color: themed("border");
             color: themed("textColor");
         }
-
-        .bottom {
-            position: absolute;
-            bottom: 0px!important;
-        }
-
-
 
         .btn:hover {
             background-color: gray;

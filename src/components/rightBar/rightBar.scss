@@ -1,0 +1,75 @@
+@import "../../style.scss";
+
+.rightBar {
+    @include themify($themes) {
+        position: sticky;
+        max-width: 100%;
+        overflow: scroll;
+        overflow-x: hidden;
+        height: calc(100vh - 4rem);
+        top: 4rem;
+        background-color: themed("bgSoft");
+        color: themed("textColor");
+        border-color: themed("border") !important;
+
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: themed("bgSoft");
+        }
+
+        &::-webkit-scrollbar {
+            width: 12px;
+            background-color: themed("bgSoft");
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+            background-color: themed("scroll");
+        }
+
+        .user {
+            .user-info {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .status {
+                width: 16px;
+                height: 16px;
+                border: 2px solid themed("bg");
+                border-radius: 100%;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                transform: translate(20%, -30%);
+                background-color: rgb(21, 202, 21);
+            }
+        }
+
+        .btn {
+            border-color: themed("border");
+            color: themed("textColor");
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: 0px !important;
+        }
+
+        .suggestions {
+            background-color: themed("bgSoft");
+            color: themed("textColor");
+        }
+
+        .btn:hover {
+            background-color: gray;
+        }
+
+        a {
+            color: themed("textColor");
+        }
+    }
+}

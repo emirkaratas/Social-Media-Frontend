@@ -5,6 +5,7 @@ $themes: (
     logo: darkblue,
     bgSoft: #f6f3f3,
     textColorSoft: #555,
+    scroll: #9c9c9c,
     border: lightgray,
   ),
   dark: (
@@ -13,6 +14,7 @@ $themes: (
     logo: white,
     bgSoft: #333,
     textColorSoft: lightgray,
+    scroll: #555,
     border: #444,
   ),
 );
@@ -49,4 +51,10 @@ $themes: (
   @media (max-width: 960px) {
     @content;
   }
+}
+
+.app-bg {
+  @include themify($themes) {
+    background-color: themed("bg");
+}
 }
