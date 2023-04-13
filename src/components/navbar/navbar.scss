@@ -13,6 +13,14 @@
             color: themed("textColor");
         }
 
+        form {
+            input {
+                background-color: themed("bgSoft");
+                color: themed("textColor");
+                border-color: themed("border");
+            }
+        }
+
         .btn:hover {
             background-color: gray;
         }
