@@ -7,6 +7,8 @@ $themes: (
     textColorSoft: #555,
     scroll: #9c9c9c,
     border: lightgray,
+    storyOpacity: .8,
+    storyOpacityHover: .7,
   ),
   dark: (
     textColor: whitesmoke,
@@ -16,6 +18,8 @@ $themes: (
     textColorSoft: lightgray,
     scroll: #555,
     border: #444,
+    storyOpacity: .6,
+    storyOpacityHover: .45,
   ),
 );
 
