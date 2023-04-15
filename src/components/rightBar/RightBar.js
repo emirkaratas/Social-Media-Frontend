@@ -69,73 +69,73 @@ function RightBar() {
           <h5>Çevrimiçi Arkadaşlar</h5>
           <div className="user mt-3 d-flex align-items-center justify-content-between">
             <div className="user-info d-flex align-items-center">
-              <div class="avatar position-relative">
+              <div className="avatar position-relative">
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
-                <span class="status"></span>
+                <span className="status"></span>
               </div>
               <span className='ms-2 fw-bold'>Emir Karataş</span>
             </div>
           </div><div className="user mt-3 d-flex align-items-center justify-content-between">
             <div className="user-info d-flex align-items-center">
-              <div class="avatar position-relative">
+              <div className="avatar position-relative">
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
-                <span class="status"></span>
+                <span className="status"></span>
               </div>
               <span className='ms-2 fw-bold'>Emir Karataş</span>
             </div>
           </div><div className="user mt-3 d-flex align-items-center justify-content-between">
             <div className="user-info d-flex align-items-center">
-              <div class="avatar position-relative">
+              <div className="avatar position-relative">
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
-                <span class="status"></span>
+                <span className="status"></span>
               </div>
               <span className='ms-2 fw-bold'>Emir Karataş</span>
             </div>
           </div><div className="user mt-3 d-flex align-items-center justify-content-between">
             <div className="user-info d-flex align-items-center">
-              <div class="avatar position-relative">
+              <div className="avatar position-relative">
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
-                <span class="status"></span>
+                <span className="status"></span>
               </div>
               <span className='ms-2 fw-bold'>Emir Karataş</span>
             </div>
           </div><div className="user mt-3 d-flex align-items-center justify-content-between">
             <div className="user-info d-flex align-items-center">
-              <div class="avatar position-relative">
+              <div className="avatar position-relative">
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
-                <span class="status"></span>
+                <span className="status"></span>
               </div>
               <span className='ms-2 fw-bold'>Emir Karataş</span>
             </div>
           </div><div className="user mt-3 d-flex align-items-center justify-content-between">
             <div className="user-info d-flex align-items-center">
-              <div class="avatar position-relative">
+              <div className="avatar position-relative">
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
-                <span class="status"></span>
+                <span className="status"></span>
               </div>
               <span className='ms-2 fw-bold'>Emir Karataş</span>
             </div>
           </div><div className="user mt-3 d-flex align-items-center justify-content-between">
             <div className="user-info d-flex align-items-center">
-              <div class="avatar position-relative">
+              <div className="avatar position-relative">
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
-                <span class="status"></span>
+                <span className="status"></span>
               </div>
               <span className='ms-2 fw-bold'>Emir Karataş</span>
             </div>
           </div><div className="user mt-3 d-flex align-items-center justify-content-between">
             <div className="user-info d-flex align-items-center">
-              <div class="avatar position-relative">
+              <div className="avatar position-relative">
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
-                <span class="status"></span>
+                <span className="status"></span>
               </div>
               <span className='ms-2 fw-bold'>Emir Karataş</span>
             </div>
           </div><div className="user mt-3 d-flex align-items-center justify-content-between">
             <div className="user-info d-flex align-items-center">
-              <div class="avatar position-relative">
+              <div className="avatar position-relative">
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
-                <span class="status"></span>
+                <span className="status"></span>
               </div>
               <span className='ms-2 fw-bold'>Emir Karataş</span>
             </div>

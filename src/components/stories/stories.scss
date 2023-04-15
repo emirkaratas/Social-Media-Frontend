@@ -2,7 +2,6 @@
 
 .stories {
     @include themify($themes) {
-        // height: 15rem;
         overflow: scroll;
         cursor: pointer;
         overflow-y: hidden;
@@ -63,8 +62,7 @@
         }
 
         .story-author {
-            position: absolute;
-            
+            position: absolute;           
             bottom: 10%;
             left: 0px;
             transform: translateY();

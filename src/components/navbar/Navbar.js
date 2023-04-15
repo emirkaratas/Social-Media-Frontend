@@ -10,9 +10,9 @@ function Navbar() {
   const { toggle, darkMode } = useDarkModeContext()
 
   return (
-    <nav class="navbar navbar-expand-lg p-3 border-bottom border-2">
-      <div class="container">
-        <div class="navbar-header">
+    <nav className="navbar navbar-expand-lg p-3 border-bottom border-2">
+      <div className="container">
+        <div className="navbar-header">
           <div className="d-flex align-items-end">
             <span className='h4 me-4 mb-0'>Bruh</span>
             <Link to="/">
@@ -26,7 +26,7 @@ function Navbar() {
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div className="collapse navbar-collapse" id="myNavbar">
           <form className="d-flex ms-0 ms-lg-5 mt-4 mt-lg-0" role="search">
             <input className="form-control me-2" type="search" placeholder="Ara" />
             <button className="btn btn-outline-dark" type="submit">Ara</button>
@@ -47,7 +47,6 @@ function Navbar() {
               </button>
             </Link>
           </div>
-
         </div>
       </div>
     </nav>
