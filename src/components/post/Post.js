@@ -4,6 +4,10 @@ import { AiOutlineHeart } from "react-icons/ai"
 import { FcLike } from "react-icons/fc"
 import { FiShare } from "react-icons/fi"
 import { Link } from 'react-router-dom'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import { Pagination, Navigation } from "swiper";
+
 
 function Post({ post }) {
     const [like, setLike] = useState(false);
@@ -14,8 +18,8 @@ function Post({ post }) {
 
     return (
         <div className='post card mt-4'>
-            <div class="card-body">
-                <h5 class="card-title">
+            <div className="card-body">
+                <h5 className="card-title">
                     <Link className="d-flex align-items-center text-decoration-none" to={`/profile/${post.userId}`}>
                         <div className="circle me-2">
                             <img src={post.profilePic} alt="" />
@@ -26,10 +30,20 @@ function Post({ post }) {
                         </div>
                     </Link>
                 </h5>
-                <p class="card-text">{post.description}</p>
+                <p className="card-text">{post.description}</p>
             </div>
-            <img src={post.image} class="card-img-top" alt="..." />
-            <div class="card-footer">
+            <Swiper
+                pagination={{
+                    clickable: true,
+                    dynamicBullets: true,
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+            >
+                {post.image.map((image, index) => (<SwiperSlide key={post.postId * post.userId + index}><img src={image} className="card-img-top"/></SwiperSlide>))}
+            </Swiper>
+            <div className="card-footer">
                 <div className="d-flex justify-content-between align-items-center">
                     <div className="footer-icons h3">
                         {

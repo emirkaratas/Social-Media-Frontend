@@ -32,5 +32,30 @@
         .comments {
             cursor: pointer;
         }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: white;
+        }
+
+        .swiper-button-prev {
+            color: white;
+        }
+        
+        .swiper-button-next {
+            color: white;
+        }
     }
 }
