@@ -61,12 +61,42 @@
         .like-count {
             cursor: pointer;
         }
+
+        textarea {
+            white-space: pre-wrap;
+            height: 2.75rem;
+            background-color: themed("bgSoft");
+            color: themed("textColor");
+            border-color: themed("border");
+            overflow-x: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow-y: scroll;
+        }
+
+        textarea::-webkit-search-cancel-button {
+            -webkit-appearance: searchfield-cancel-button;
+        }
+
+        textarea {
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        .comment-form {
+            button {
+                height: 2.75rem!important;
+            }
+        }
     }
 }
 
-.custom-modal .ant-modal-content, .ant-modal-title,.ant-modal-close-x{
-    background-color: #555!important;
-    color: white!important;
+.custom-modal .ant-modal-content,
+.ant-modal-title,
+.ant-modal-close-x {
+    background-color: #555 !important;
+    color: white !important;
 }
 
 .ant-modal-close-x :hover {

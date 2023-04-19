@@ -9,10 +9,20 @@ import 'swiper/swiper-bundle.css';
 import { Pagination, Navigation } from "swiper";
 import { Modal } from 'antd';
 import Comments from '../comments/Comments'
+import { useFormik } from 'formik'
 import Likes from '../likes/Likes'
+import { Button, Form } from 'react-bootstrap'
 
 
 function Post({ post }) {
+    const formik = useFormik({
+        initialValues: {
+            comment: "",
+        },
+        onSubmit: (values, bag) => {
+            console.log(values)
+        }
+    })
     const [like, setLike] = useState(false);
     const [isLikeModalOpen, setIsLikeModalOpen] = useState(false);
     const [isCommentModalOpen, setIsCommentModalOpen] = useState(false);
@@ -81,6 +91,18 @@ function Post({ post }) {
                 <Modal title="Yorumlar" open={isCommentModalOpen} onCancel={handleCommentCancel} footer={null} className='custom-modal' centered>
                     <Comments post={post} />
                 </Modal>
+                <Form onSubmit={formik.handleSubmit} className='d-flex align-items-center comment-form'>
+                    <Form.Group className="mb-3 mt-3 w-100">
+                        <Form.Control
+                            name='comment'
+                            className='form-control me-2'
+                            as="textarea"
+                            placeholder="Yorum Yaz"
+                            onChange={formik.handleChange}
+                        />
+                    </Form.Group>
+                    <button className="btn btn-outline-dark ms-2 h-100" type="submit">Gönder</button>
+                </Form>
             </div>
         </div>
     )
