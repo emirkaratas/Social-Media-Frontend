@@ -24,6 +24,16 @@ function Posts() {
                 image: ["https://images5.alphacoders.com/115/1155095.jpg"]
             }
             } />
+             <Post post={{
+                postId: 9896,
+                profilePic: "https://pbs.twimg.com/media/Fr-1GNhWwAEFkHB.jpg:large",
+                userId: 977,
+                userName: "Erdem Koyuncu",
+                datePosted: "5 sec ago",
+                description: "What a car!",
+                image: []
+            }
+            } />
         </div>
     )
 }

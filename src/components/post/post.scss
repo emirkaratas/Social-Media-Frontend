@@ -89,6 +89,46 @@
                 height: 2.75rem!important;
             }
         }
+
+        .user-info {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .relevant-comment {
+            background-color: themed("relevantComment");
+            color: themed("textColor");
+        }
+        
+        .all-comments {
+            color: themed("textColorSoft");
+            transition: all .4s;
+        }
+
+        .all-comments:hover {
+            color: themed("textColor");
+        }
+
+        .no-photo-footer {
+            background-color: themed("bgSoft");
+        }
+
+        .footer-icon span {
+            font-size: 1.15rem;
+        }
+        .footer-icon {
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+        }
+        .footer-icon:hover {
+            background-color: themed("postButtonHover");
+        }
+
+        .post-icon-row {
+            border-color: themed("border")!important;
+        }
     }
 }
 
