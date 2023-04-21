@@ -1,7 +1,7 @@
 $themes: (
   light: (
     textColor: #000,
-    bg: white,
+    bg: rgb(252, 252, 252),
     logo: darkblue,
     bgSoft: #f6f3f3,
     textColorSoft: #555,
@@ -10,7 +10,7 @@ $themes: (
     postButtonHover: lightgray,
     storyOpacity: .8,
     storyOpacityHover: .7,
-    relevantComment: #f6f3f3
+    relevantComment: #eeebeb
   ),
   dark: (
     textColor: whitesmoke,

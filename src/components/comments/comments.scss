@@ -1,0 +1,15 @@
+@import "../../style.scss";
+
+.comments-modal {
+        .user-info {
+            img {
+                width: 40px !important;
+                height: 40px !important;
+            }
+        }
+
+        .card {
+            background-color: #616161;
+            color: white;
+        }
+}
