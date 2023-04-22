@@ -1,15 +1,71 @@
 @import "../../style.scss";
 
 .comments-modal {
-        .user-info {
-            img {
-                width: 40px !important;
-                height: 40px !important;
-            }
+    .user-info {
+        img {
+            width: 40px !important;
+            height: 40px !important;
         }
+    }
 
-        .card {
-            background-color: #616161;
-            color: white;
+    .card {
+        background-color: #696969;
+        color: white;
+    }
+
+    textarea, textarea:empty {
+        white-space: pre-wrap;
+        height: 4rem;
+        background-color: #696969;
+        color: white;
+        border-color: #555;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-y: scroll;
+    }
+
+    textarea, textarea:empty::-webkit-search-cancel-button {
+        -webkit-appearance: searchfield-cancel-button;
+    }
+
+    textarea, textarea:empty {
+        &::-webkit-scrollbar {
+            display: none;
         }
+        &::-webkit-input-placeholder {
+            color: white!important;
+        }
+    }
+
+    .comment-form {
+        button {
+            height: 4rem !important;
+        }
+    }
+
+    .user-info button {
+        padding: 0;
+        color: white;
+        border: 0;
+    }
+
+    .user-info button:hover {
+        color: #333;
+        border: 0;
+    }
+
+    .like-count {
+        position: absolute;
+        right: 0rem;
+        bottom: .9rem;
+        padding: .2rem;
+        border-radius: 30%;
+        min-width: 2rem;
+        text-align: center;
+        height: 1.8rem;
+        background-color: #555;
+        color: lightgrey;
+    }
+    
 }

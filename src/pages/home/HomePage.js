@@ -6,7 +6,7 @@ import Posts from '../../components/posts/Posts'
 function HomePage() {
   return (
     <div className='home-page p-2'>
-      <Stories />
+      <Stories/>
       <Posts />
     </div>
   )

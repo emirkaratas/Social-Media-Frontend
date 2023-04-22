@@ -16,7 +16,7 @@ import { Form } from 'react-bootstrap'
 
 
 function Post({ post }) {
-    const darkMode = localStorage.getItem("darkMode")
+
     const formik = useFormik({
         initialValues: {
             comment: "",
@@ -30,25 +30,15 @@ function Post({ post }) {
     const [isCommentModalOpen, setIsCommentModalOpen] = useState(false);
     const isImageEmpty = post.image.length == 0
 
-    const showLikeModal = () => {
-        setIsLikeModalOpen(true);
-    };
+    const showLikeModal = () => setIsLikeModalOpen(true);
 
-    const showCommentModal = () => {
-        setIsCommentModalOpen(true);
-    };
+    const showCommentModal = () => setIsCommentModalOpen(true);
 
-    const handleLikeCancel = () => {
-        setIsLikeModalOpen(false);
-    };
+    const handleLikeCancel = () => setIsLikeModalOpen(false);
 
-    const handleCommentCancel = () => {
-        setIsCommentModalOpen(false);
-    };
+    const handleCommentCancel = () => setIsCommentModalOpen(false);
 
-    const handleLike = () => {
-        setLike(!like)
-    }
+    const handleLike = () => setLike(!like)
 
     return (
         <div className='post card mt-4'>
@@ -109,7 +99,7 @@ function Post({ post }) {
                     <Likes post={post} />
                 </Modal>
                 <Modal title="Yorumlar" open={isCommentModalOpen} onCancel={handleCommentCancel} footer={null} className='custom-modal' centered>
-                    <Comments post={post}/>
+                    <Comments post={post} />
                 </Modal>
                 <Form onSubmit={formik.handleSubmit} className='d-flex align-items-center comment-form'>
                     <div className="user-info me-2">
