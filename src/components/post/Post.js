@@ -119,11 +119,15 @@ function Post({ post }) {
                     <button className="btn btn-outline-dark ms-2 h-100" type="submit">Gönder</button>
                 </Form>
                 <div className="user-info d-flex align-items-start mb-2">
-                    <div className="avatar position-relative">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
-                    </div>
+                    <Link to="/profile/974">
+                        <div className="avatar position-relative">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
+                        </div>
+                    </Link>
                     <div className="card relevant-comment ms-2 p-1">
-                        <span className='ms-2 fw-bold'>Emir Karataş</span>
+                        <Link to="/profile/974" className='text-decoration-none link-to-profile'>
+                            <span className='ms-2 fw-bold'>Emir Karataş</span>
+                        </Link>
                         <div className='ms-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa perferendis nemo sunt aliquid voluptate cum qui, natus quisquam laborum ad?</div>
                     </div>
                 </div>

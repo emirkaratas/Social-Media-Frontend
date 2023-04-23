@@ -86,7 +86,7 @@
 
         .comment-form {
             button {
-                height: 2.75rem!important;
+                height: 2.75rem !important;
             }
         }
 
@@ -101,7 +101,7 @@
             background-color: themed("relevantComment");
             color: themed("textColor");
         }
-        
+
         .all-comments {
             color: themed("textColorSoft");
             transition: all .4s;
@@ -118,17 +118,20 @@
         .footer-icon span {
             font-size: 1.15rem;
         }
+
         .footer-icon {
             transition: all .3s ease-in-out;
             cursor: pointer;
         }
+
         .footer-icon:hover {
             background-color: themed("postButtonHover");
         }
 
         .post-icon-row {
-            border-color: themed("border")!important;
+            border-color: themed("border") !important;
         }
+
     }
 }
 
@@ -165,4 +168,12 @@
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
         background-color: #555;
     }
+}
+
+.link-to-profile {
+    transition: all .2s ease-in-out;
+}
+
+.link-to-profile:hover {
+    opacity: .7;
 }
