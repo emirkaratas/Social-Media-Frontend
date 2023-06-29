@@ -1,0 +1,23 @@
+@import "../../style.scss";
+
+.profile {
+    @include themify($themes) {
+        min-height: calc(100vh);
+        background-color: themed("bg");
+        color: themed("textColor");
+        border-color: themed("border") !important;
+
+        .btn {
+            border-color: themed("border");
+            color: themed("textColor");
+        }
+
+        .btn:hover {
+            background-color: gray;
+        }
+
+        a {
+            color: themed("textColor");
+        }
+    }
+}
