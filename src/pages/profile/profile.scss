@@ -19,5 +19,58 @@
         a {
             color: themed("textColor");
         }
+
+        .card {
+            border-radius: 15px;
+            padding: 8px;
+            background-color: themed("bgSoft");
+            position: relative;
+        }
+
+        .upper {
+            height: 250px;
+        }
+
+        .upper .background-image {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: relative;
+        }
+
+        .profile-picture {
+            width: 8rem;
+            left: 50%;
+            top: 48%;
+            position: absolute;
+            transform: translate(-50%, -52%);
+        }
+
+        .profile {
+            position: absolute;
+
+        }
+
+        .follow {
+            border-radius: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 35px;
+        }
+
+        .stats {
+            cursor: pointer;
+            font-size: 29px;
+        }
+
+        .follow-button {
+            background-color: themed("bg");
+        }
+
+        .profile-post {
+            margin-top: 0!important;
+        }
     }
 }
